@@ -53,8 +53,7 @@
 ### 1. Klonlayın
 
 ```bash
-git clone https://github.com/kullaniciadiniz/learnexia-theme.git
-```
+git clone https://github.com/Sovrya/learnexia-theme
 
 ### 2. Klasörü Taşıyın
 
@@ -115,8 +114,11 @@ MIT Lisansı ile lisanslanmıştır. Kullanmadan önce `LICENSE` dosyasını inc
 
 Bu tema **Sovyra Takımı** tarafından geliştirilmiştir:
 
-* **Ferat TAŞ** – Full Stack Geliştirici & Tema Mimarisini Kuran
-* **Özgür EYYÜPOĞLU** – UI/UX & WooCommerce Entegrasyonu
+- **Ferat TAŞ** – Full Stack Geliştirici & Tema Mimarisini Kuran  
+  [GitHub Profili](https://github.com/ferattass) • [LinkedIn Profili](https://www.linkedin.com/in/ferattass/ferattas/)
+
+- **Özgür EYYÜPOĞLU** – UI/UX & WooCommerce Entegrasyonu  
+  [GitHub Profili](https://github.com/ozgureyyp) • [LinkedIn Profili](https://www.linkedin.com/in/ozgureyyupoglu/)
 
 ---
 
