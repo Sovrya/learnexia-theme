@@ -1,124 +1,125 @@
-# 🕵️ Learnexia Tema Projesi
+# 🕵️ Learnexia WordPress Teması
 
-**Learnexia**, eğitim bazlı dijital içeriklerin sunumu ve satışı için geliştirilmiş, modern, sade ve tam özelleştirilebilir bir **WordPress + WooCommerce** temasıdır. Bu tema sayesinde bireyler ya da kurumlar, eğitim paketlerini online olarak satabilir, video, doküman ve topluluk destekli bir deneyim sunabilir.
+**Learnexia**, eğitim odaklı dijital içeriklerin sunumu ve satışı için geliştirilmiş modern, hafif ve tam özelleştirilebilir bir **WordPress + WooCommerce temasıdır**. Eğitmenler, online akademiler ve dijital eğitim girişimleri için özel olarak tasarlanmıştır.
 
 ---
 
-## ✨ Temaya Genel Bakış
+## 🌟 Temaya Genel Bakış
 
-* ✍️ **Tema Adı**: Learnexia Theme
-* 🌟 **Amaç**: Eğitim satışına odaklı, ön sipariş ve topluluk tabanlı yapılar için sade ve etkili bir altyapı
-* 📁 **Platform**: WordPress 6+, WooCommerce 7+
-* 🎓 **Kullanım Alanları**: Online akademiler, eğitmenler, bootcamp organizasyonları, dijital eğitim girişimleri
+| Alan           | Açıklama                                         |
+| -------------- | ------------------------------------------------ |
+| 🎨 Tema Adı    | Learnexia Theme                                  |
+| ⚖️ Platform    | WordPress 6+, WooCommerce 7+                     |
+| 🎯 Hedef Kitle | Eğitmenler, akademiler, kurs platformları        |
+| 💻 Destek      | Mobil, tablet ve masaüstü uyumluluk (responsive) |
+| 🌐 Dil         | Türkçe, İngilizce (i18n uyumluluğu hedefleniyor) |
 
 ---
 
 ## 🚀 Öne Çıkan Özellikler
 
-### 🌎 Anasayfa (Hero) Alanı
+### 🏠 Anasayfa Hero Alanı
 
-* Özelleştirilebilir başlık, alt başlık, açıklama ve CTA butonu
-* WordPress Customizer ile dinamik düzenleme
+* Dinamik başlık, açıklama ve CTA butonu
+* WordPress Customizer paneli ile canlı düzenleme
 
-### 🏠 "Neden Biz?" Kart Alanı
+### 💎 "Neden Biz?" Kartları
 
-* 3 adet kart ile avantaj vurgusu
-* Her kartta görsel, başlık ve açıklama içeriği panelden girilebiliyor
+* Görsel, başlık ve açıklamadan oluşan 3 kart
+* Tüm alanlar WP Customizer üzerinden yönetilebilir
 
-### 🛍️ Mağaza (WooCommerce Entegrasyonu)
+### 🛒 Mağaza Sayfası
 
-* Tüm eğitim paketleri ürün olarak listelenebilir
-* İndirimli fiyatlar, sepete ekle butonları, mobil uyumlu kartlar
-* Sepet, ödeme ve sipariş akışı şablonlara entegre
+* Eğitimler ürün olarak listelenir
+* Fiyat, indirim, sepete ekle gibi tüm öğeler özelleştirilebilir
+* Sepet, ödeme ve sipariş sayfalarıyla bütünleşik yapı
 
-### 💌 İletişim Sayfası
+### 📩 İletişim Sayfası
 
-* Klasik form: Ad Soyad, E-posta, Mesaj alanları
-* WPForms gibi form eklentileriyle uyumlu
+* Basit form yapısı: Ad Soyad, E-posta, Mesaj
+* WPForms ve Contact Form 7 desteği
 
-### 📊 Performans ve Tasarım
+### ⚙️ Teknik Yapı
 
-* Hafif yapılı, sade, dikkat dağıtmayan arayüz
-* Mobil ve tablet uyumluluğu (responsive)
+* Hafif ve sade yapısı ile hızlı yüklenme
+* SEO dostu yapısal kodlama
 * Google Fonts entegrasyonu
+* Kodlama standartlarına uygun (WP Codex)
 
 ---
 
-## 🛠️ Kurulum Adımları
+## 🔧 Kurulum Adımları
 
-### ✈️ 1. Dosyayı Temin Edin
+### 1. Klonlayın
 
 ```bash
 git clone https://github.com/kullaniciadiniz/learnexia-theme.git
 ```
 
-### 📂 2. Tema Yüklemesi
+### 2. Klasörü Taşıyın
 
-* Klasörü `/wp-content/themes/` içine atın
-* WP panelden **Görünüm > Temalar** alanından aktif edin
+`learnexia-theme` klasörünü şu dizine taşıyın:
 
-### ⚡ 3. Eklenti Gereksinimleri
+```
+/wp-content/themes/
+```
 
-* WooCommerce yükleyin ve kurun
-* (Opsiyonel) WPForms veya Contact Form 7
+### 3. Temayı Aktif Edin
 
-### 🔧 4. Özelleştirme
+WordPress panelinde:
 
-* **Görünüm > Özelleştir** menüsünden hero alanı ve kartları düzenleyin
+```
+Görünüm > Temalar > Learnexia > Etkinleştir
+```
 
----
+### 4. Gerekli Eklentiler
 
-## 📷 Ekran Görüntüleri
-
-### Anasayfa Hero
-
-![Hero](./Images/homepage.png)
-
-### "Neden Biz?" Kartları
-
-![Neden Biz](./Images/where.png)
-
-### Mağaza Sayfası
-
-![Mağaza](./Images/shop.png)
-
-### Sepet ve Ödeme Sayfası
-
-![Sepet](./Images/cartPage.png)
-----------------------------
-![odeme](./Images/payment.png)
-
-### İletişim Formu
-
-![İletişim](./Images/contact.png)
+* WooCommerce (zorunlu)
+* WPForms veya Contact Form 7 (opsiyonel)
 
 ---
 
-## 🤝 Katkı Sunmak
+## 🖼️ Ekran Görüntüleri
 
-Bu repo, topluluğa açıktır. Şu yollarla katkıda bulunabilirsiniz:
+> Görseller `./Images/` klasöründedir. Aşağıda temel önizlemeler verilmiştir:
 
-* Issue oluşturarak hata veya öneri bildirimi
-* Forklayıp yeni özellik geliştirme
-* Pull Request göndererek düzenleme teklif etmek
+| Sayfa     | Görsel                           |
+| --------- | -------------------------------- |
+| Hero      | ![Hero](./Images/homepage.png)   |
+| Neden Biz | ![Neden Biz](./Images/where.png) |
+| Mağaza    | ![Shop](./Images/shop.png)       |
+| Sepet     | ![Cart](./Images/cartPage.png)   |
+| Ödeme     | ![Payment](./Images/payment.png) |
+| İletişim  | ![Contact](./Images/contact.png) |
 
 ---
 
-## 💼 Lisans
+## 👍 Katkı Sunmak
 
-MIT Lisansı - özgürce kullanabilir, değiştirebilir, dağıtabilirsiniz. Detaylar için `LICENSE` dosyasını inceleyin.
+Bu proje topluluğa açıktır. Katkı vermek için:
+
+* Forklayın
+* Geliştirin
+* PR gönderin
+* Issue açarak hata veya öneri bildirimi yapın
 
 ---
 
-## 🙌 Emeği Geçenler
+## 📃 Lisans
+
+MIT Lisansı ile lisanslanmıştır. Kullanmadan önce `LICENSE` dosyasını inceleyin.
+
+---
+
+## 👥 Geliştiriciler
 
 Bu tema **Sovyra Takımı** tarafından geliştirilmiştir:
 
-* **Ferat TAŞ** - Full Stack Geliştirici & Tema Kurucusu
-* **Özgür EYYÜPOĞLU** - UI/UX & WooCommerce Entegrasyonu
+* **Ferat TAŞ** – Full Stack Geliştirici & Tema Mimarisini Kuran
+* **Özgür EYYÜPOĞLU** – UI/UX & WooCommerce Entegrasyonu
 
 ---
 
-## ✨ Söz Sonu
+## 🌟 Son Söz
 
-> "Gizemi Keşet, Bilgiyi Edin."
+> “Gizemi keşfet, bilgiyi edin. Öğretmeye değer olan şey, paylaşmaya da değerlidir.”
