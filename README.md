@@ -114,8 +114,8 @@ MIT Lisansı - özgürce kullanabilir, değiştirebilir, dağıtabilirsiniz. Det
 
 Bu tema **Sovyra Takımı** tarafından geliştirilmiştir:
 
-* **Ferat Taş** - Full Stack Geliştirici & Tema Kurucusu
-* **\[Ekip Arkadaşının Adı]** - UI/UX & WooCommerce Entegrasyonu
+* **Ferat TAŞ** - Full Stack Geliştirici & Tema Kurucusu
+* **Özgür EYYÜPOĞLU** - UI/UX & WooCommerce Entegrasyonu
 
 ---
 
