@@ -54,6 +54,7 @@
 
 ```bash
 git clone https://github.com/Sovrya/learnexia-theme
+```
 
 ### 2. Klasörü Taşıyın
 
@@ -110,13 +111,19 @@ MIT Lisansı ile lisanslanmıştır. Kullanmadan önce `LICENSE` dosyasını inc
 
 ---
 
-👥 Geliştiriciler
+## 👥 Geliştiriciler
 
-Bu tema Sovyra Takımı tarafından geliştirilmiştir:
+Bu tema **Sovyra Takımı** tarafından geliştirilmiştir:
 
-Ferat TAŞ – Full Stack Geliştirici & Tema Mimarisini KuranGitHub • LinkedIn
+### 👨‍💻 Ferat TAŞ
 
-Özgür EYYÜPOĞLU – UI/UX & WooCommerce EntegrasyonuGitHub • LinkedIn
+**Full Stack Geliştirici & Tema Mimarisini Kuran**
+[GitHub Profili 💻](https://github.com/ferattas) • [LinkedIn Profili 💼](https://www.linkedin.com/in/ferattas/)
+
+### 👩‍🔧 Özgür EYYÜPOĞLU
+
+**UI/UX & WooCommerce Entegrasyonu**
+[GitHub Profili 💻](https://github.com/ozgureyyupoglu) • [LinkedIn Profili 💼](https://www.linkedin.com/in/ozgureyyupoglu/)
 
 ---
 
