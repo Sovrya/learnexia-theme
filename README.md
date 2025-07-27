@@ -72,23 +72,25 @@ git clone https://github.com/kullaniciadiniz/learnexia-theme.git
 
 ### Anasayfa Hero
 
-![Hero](./screenshots/hero.png)
+![Hero](./Images/homepage.png)
 
 ### "Neden Biz?" Kartları
 
-![Neden Biz](./screenshots/neden-biz.png)
+![Neden Biz](./Images/where.png)
 
 ### Mağaza Sayfası
 
-![Mağaza](./screenshots/shop.png)
+![Mağaza](./Images/shop.png)
 
 ### Sepet ve Ödeme Sayfası
 
-![Sepet](./screenshots/cart.png)
+![Sepet](./Images/cartPage.png)
+----------------------------
+![odeme](./Images/payment.png)
 
 ### İletişim Formu
 
-![İletişim](./screenshots/contact.png)
+![İletişim](./Images/contact.png)
 
 ---
 
