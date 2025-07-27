@@ -1,0 +1,1475 @@
+/*
+Theme Name: Learnexia
+Theme URI: https://adbridger.com/
+Author: Sovira Team
+Author URI: https://adbridger.com/
+Description: Learnexia, modern eğitim platformları ve WooCommerce destekli satış sistemleri için geliştirilmiş özgün, hızlı ve kullanıcı dostu bir WordPress temasıdır.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: learnexia
+Tags: education, lms, modern, responsive, woocommerce, custom
+*/
+
+
+/* GENEL RESET VE DEĞİŞKENLER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #16a085;
+    --light-color: #ffffff;
+    --dark-color: #34495e;
+    --accent-color: #e67e22;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: #f8f9fa;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* HEADER */
+.site-header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.75rem 0;
+    /* Eskiden 1.5rem idi */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.logo img {
+    height: 70px;
+    /* Şu an büyük duruyor */
+}
+
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    /* 2rem değil, 1rem olsun */
+}
+
+
+.main-nav a {
+    font-size: 0.9rem;
+    /* ekle veya güncelle */
+    color: var(--light-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+.main-nav a:hover {
+    color: var(--accent-color);
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+.cart-count {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    margin-left: 4px;
+}
+
+/* === HEADER SEPET TASARIMI === */
+
+.header-cart {
+    position: relative;
+    margin-left: 15px;
+}
+
+.header-cart .cart-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 22px;
+    color: #ffffff;
+    /* Açık renk ikon */
+    text-decoration: none;
+}
+
+.header-cart .cart-icon i {
+    font-size: 22px;
+    color: #cecece;
+    /* Sepet ikonu açık renkte */
+}
+
+.header-cart .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #ffffff;
+    /* Beyaz zemin */
+    color: #2c3e50;
+    /* Ana tema rengi ile uyumlu yazı */
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    /* Daha zarif bir çerçeve */
+}
+
+/* HERO BÖLÜMÜ */
+.hero-section,
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.cta-button,
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #fff;
+    color: #ff8800;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* ekstra şıklık için */
+    position: relative;
+    z-index: 2;
+    /* her şeyin üstünde olsun */
+}
+
+.cta-button:hover,
+.btn-primary:hover {
+    background-color: #d35400;
+}
+
+.hero-image {
+    max-width: 300px;
+}
+
+/* NEDEN BİZ */
+.nedenbiz-section {
+    padding: 4rem 0;
+    background-color: white;
+    text-align: center;
+}
+
+.nedenbiz-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ABOUT */
+.about-page {
+    background-color: #fff;
+    padding-bottom: 4rem;
+}
+
+.about-hero {
+    padding: 4rem 0 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.about-text,
+.about-image {
+    flex: 1 1 45%;
+}
+
+.about-text h2 {
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+.about-image img {
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-column {
+    flex: 1 1 250px;
+}
+
+.footer-column h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* COPYRIGHT */
+.copyright {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .header-flex,
+    .nedenbiz-cards,
+    .about-content,
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+    }
+}
+
+
+/* ÜRÜN SAYFASI */
+
+.shop-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    color: #222;
+    font-weight: bold;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.price {
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-button {
+    background-color: #ffa500;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #e69500;
+}
+
+/* ====================
+   MINI SEPET TASARIMI (GÜNCELLENDİ)
+==================== */
+
+/* Mini Sepet Ana Alanı */
+.mini-cart-wrapper {
+    position: relative;
+    z-index: 1000;
+}
+
+.mini-cart-wrapper .cart-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #222;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.mini-cart-wrapper .cart-icon:hover {
+    transform: scale(1.1);
+}
+
+.mini-cart-wrapper .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #f44336;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.cart-product-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    /* Görsel ve yazı arası boşluk azaltıldı */
+}
+
+.cart-title {
+    margin-top: -6px;
+    /* Yazıyı biraz yukarı çeker */
+    text-align: center;
+}
+
+/* Dropdown */
+.mini-cart-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.25s ease;
+    pointer-events: none;
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+.mini-cart-dropdown.open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Ürün Listesi */
+.woocommerce-mini-cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+    font-size: 15px;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.woocommerce-mini-cart-item:last-child {
+    border-bottom: none;
+}
+
+.woocommerce-mini-cart-item img {
+    width: 50px;
+    height: auto;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.woocommerce-mini-cart-item a {
+    color: #0073aa;
+    font-weight: 600;
+    text-decoration: none;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 8px;
+}
+
+.woocommerce-mini-cart-item a:hover {
+    text-decoration: underline;
+}
+
+.mini-cart-item-qty {
+    font-size: 14px;
+    color: #777;
+    white-space: nowrap;
+}
+
+/* Ürün Silme Butonu */
+.remove-item-button {
+    background: none;
+    border: none;
+    color: #f44336;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.2s ease;
+}
+
+.remove-item-button:hover {
+    color: #d32f2f;
+}
+
+/* Boş Sepet Mesajı */
+.empty-cart-msg {
+    padding: 25px 10px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Sepet Butonları */
+.mini-cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.mini-cart-buttons .button {
+    flex: 1;
+    background-color: #0073aa;
+    color: white !important;
+    padding: 12px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.mini-cart-buttons .button:hover {
+    background-color: #005f8a;
+}
+
+/* Responsive için düzeltme */
+@media (max-width: 480px) {
+    .mini-cart-dropdown {
+        width: 90vw;
+        right: 5vw;
+        padding: 15px;
+        max-height: 80vh;
+    }
+
+    .woocommerce-mini-cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .woocommerce-mini-cart-item a {
+        margin: 6px 0;
+        max-width: 100%;
+    }
+
+    .mini-cart-buttons {
+        flex-direction: column;
+    }
+
+    .mini-cart-buttons .button {
+        width: 100%;
+    }
+}
+
+
+/* ====================
+   WOOCOMMERCE SEPET SAYFASI TASARIMI
+==================== */
+
+.woocommerce-cart table.shop_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: var(--dark-color);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.woocommerce-cart table.shop_table th,
+.woocommerce-cart table.shop_table td {
+    padding: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+.woocommerce-cart table.shop_table th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+}
+
+.woocommerce-cart .product-thumbnail img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.woocommerce-cart .product-remove a {
+    color: red;
+    font-size: 18px;
+}
+
+.woocommerce-cart .actions .button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.woocommerce-cart .actions .button:hover {
+    background-color: #12856f;
+}
+
+/* Güncelle butonunun aktif görünmesi için */
+.woocommerce .cart .actions .button:disabled {
+    opacity: 1 !important;
+    cursor: pointer !important;
+}
+
+/* Cart totals */
+.cart_totals {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart_totals h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.cart_totals table {
+    width: 100%;
+    font-size: 15px;
+}
+
+.cart_totals table td {
+    padding: 10px 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .woocommerce-cart table.shop_table th,
+    .woocommerce-cart table.shop_table td {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .woocommerce-cart .product-thumbnail img {
+        max-width: 40px;
+    }
+
+    .cart_totals {
+        font-size: 14px;
+    }
+}
+
+.woocommerce .cart .actions .button:disabled {
+    opacity: 1 !important;
+    cursor: pointer !important;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* === İLETİŞİM FORMU TASARIMI === */
+.wpcf7-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: 60px auto;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.wpcf7-form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #333;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    transition: border 0.2s;
+}
+
+.wpcf7-form input:focus,
+.wpcf7-form textarea:focus {
+    border-color: #ffa500;
+    outline: none;
+    background-color: #fff;
+}
+
+.wpcf7-submit {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.wpcf7-submit:hover {
+    background-color: #e69700;
+}
+
+/* === SAYFA BAŞLIĞI VE YAZI HİZALAMA === */
+.page h1.entry-title {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 80px;
+}
+
+.page .entry-content p:first-of-type {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* === FORM (DİNAMİK HTML FORM) === */
+form#contactForm {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form#contactForm label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: #333;
+}
+
+form#contactForm input[type="text"],
+form#contactForm input[type="email"],
+form#contactForm textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+form#contactForm input:focus,
+form#contactForm textarea:focus {
+    border-color: #0099cc;
+    outline: none;
+}
+
+form#contactForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form#contactForm button[type="submit"] {
+    background-color: #007acc;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+form#contactForm button[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+    form#contactForm {
+        padding: 20px;
+    }
+
+    form#contactForm button[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* === MESAJ BAŞARILI === */
+.success-message {
+    background-color: #e6ffed;
+    color: #2e7d32;
+    padding: 15px;
+    border-left: 5px solid #4caf50;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#contactForm label {
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contactForm textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+#contactForm button {
+    background-color: #0073aa;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #005f8d;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px;
+    border-radius: 6px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* === login === */
+
+.login-wrapper {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.login-wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-wrapper label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.login-wrapper input[type="text"],
+.login-wrapper input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.login-wrapper input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.login-wrapper input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+.login-wrapper .error-message {
+    background-color: #fbeaea;
+    color: #c00;
+    padding: 10px;
+    border-left: 4px solid #c00;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form.login-form input[type="text"],
+form.login-form input[type="password"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+form.login-form input[type="submit"] {
+    background-color: #0073aa;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form.login-form input[type="submit"]:hover {
+    background-color: #005f8a;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.user-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.user-dropdown span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.user-dropdown .dropdown-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 160px;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.user-dropdown:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-list li {
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+}
+
+.dropdown-list li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dropdown-list li:hover {
+    background-color: #f3f3f3;
+}
+
+/* Hesabım Sayfası Genel */
+.woocommerce-MyAccount-navigation {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    float: left;
+    margin-right: 30px;
+}
+
+.woocommerce-MyAccount-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.woocommerce-MyAccount-navigation li {
+    margin-bottom: 15px;
+}
+
+.woocommerce-MyAccount-navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-navigation .is-active a {
+    background-color: #ffa726;
+    color: white;
+}
+
+/* İçerik Alanı */
+.woocommerce-MyAccount-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Siparişler tablosu */
+.woocommerce-MyAccount-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.woocommerce-MyAccount-content th,
+.woocommerce-MyAccount-content td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.woocommerce-MyAccount-content th {
+    background-color: #f5f5f5;
+}
+
+/* Form düzenlemeleri */
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.woocommerce button.button {
+    background-color: #ffa726;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.woocommerce button.button:hover {
+    background-color: #fb8c00;
+}
+
+.single-product-page {
+    padding: 60px 0;
+    background: #f7f8f9;
+}
+
+.product-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.woocommerce div.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.woocommerce div.product div.images {
+    flex: 1;
+    min-width: 300px;
+}
+
+.woocommerce div.product div.summary {
+    flex: 1;
+    min-width: 300px;
+}
+
+.woocommerce div.product .price {
+    font-size: 24px;
+    color: #e67e22;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.woocommerce div.product form.cart {
+    margin-top: 20px;
+}
+
+.woocommerce .quantity input.qty {
+    padding: 8px;
+    width: 60px;
+}
+
+.woocommerce button.single_add_to_cart_button {
+    background: #f39c12;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.woocommerce button.single_add_to_cart_button:hover {
+    background: #e67e22;
+}
+
+.woocommerce div.product .product_meta {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.single-product .summary {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.woocommerce div.product .woocommerce-tabs {
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-sovira-style {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-sovira-style .product-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-sovira-style .product-price {
+    font-size: 1.5rem;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.product-sovira-style .product-summary {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.product-sovira-style .product-add-to-cart form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-sovira-style .woocommerce-tabs {
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.df-single {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.df-product-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.df-gallery {
+    flex: 1 1 50%;
+    min-width: 300px;
+}
+
+.df-summary {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.df-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.df-price {
+    font-size: 1.5rem;
+    color: #e67e22;
+}
+
+.df-short-desc {
+    font-size: 1rem;
+    color: #444;
+}
+
+.df-cart form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.df-meta {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.df-product-tabs {
+    margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .df-product-content {
+        flex-direction: column;
+    }
+}
+
+.df-single .df-product-content {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.egitimim-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #222;
+}
+
+.egitim-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.egitim-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.egitim-card:hover {
+    transform: scale(1.02);
+}
+
+.egitim-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.egitim-card h3 {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* SEPET ve KULLANICI MENÜ HİZALAMA */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* NAV menüsü ve simgeler ortak hizalı */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* Eskiden 2rem idi */
+}
+
+.main-nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* user ve cart hizası */
+.user-menu,
+.header-cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+/* cart ikon ve balon hizalama */
+.header-cart .cart-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    color: var(--light-color);
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 50%;
+    line-height: 1;
+    min-width: 18px;
+    text-align: center;
+}
+
+/* kullanıcı yazısı hizası */
+.user-dropdown>span,
+.user-menu>a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--light-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    line-height: 1;
+}
+
+/* NEDEN BİZ BAŞLIĞI */
+.section-title {
+    margin-top: 2rem;       /* Yukarı çekmek için azaltıldı */
+    margin-bottom: 3rem;    /* Aşağısına yeterli boşluk bırakıldı */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* KART BAŞLIĞI (h3) için boşluk ekle */
+.nedenbiz-cards .card h3 {
+    margin-top: 1rem;   /* Görselle metin arasında boşluk oluşturur */
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Kart genel padding zaten yeterli ama ekstra istersen şunu da ekleyebilirsin */
+.nedenbiz-cards .card {
+    padding-top: 2rem;
+}
+
+/* TELİF ALANI */
+.site-footer .copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ddd;
+    line-height: 1.6;
+    background-color: #2c3e50; /* footer'ın üstüyle uyumlu ton */
+}
+
+.site-footer .copyright p {
+    margin: 0;
+}
+
