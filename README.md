@@ -85,12 +85,12 @@ Görünüm > Temalar > Learnexia > Etkinleştir
 
 | Sayfa     | Görsel                           |
 | --------- | -------------------------------- |
-| Hero      | ![Hero](./Images/homepage.png)   |
+| Anasayfa      | ![Anasayfa](./Images/homepage.png)   |
 | Neden Biz | ![Neden Biz](./Images/where.png) |
-| Mağaza    | ![Shop](./Images/shop.png)       |
-| Sepet     | ![Cart](./Images/cartPage.png)   |
-| Ödeme     | ![Payment](./Images/payment.png) |
-| İletişim  | ![Contact](./Images/contact.png) |
+| Mağaza    | ![Mağaza](./Images/shop.png)       |
+| Sepet     | ![Sepet](./Images/cartPage.png)   |
+| Ödeme     | ![Ödeme](./Images/payment.png) |
+| İletişim  | ![İletişim](./Images/contact.png) |
 
 ---
 
