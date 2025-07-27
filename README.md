@@ -117,12 +117,12 @@ Bu tema **Sovyra Takımı** tarafından geliştirilmiştir:
 
 ### 👨‍💻 Ferat TAŞ
 
-**Full Stack Geliştirici & Tema Mimarisini Kuran**
+**Proje sorumlusu & Full Stack Geliştirici & Tema Mimarisini Kuran**
 [GitHub Profili 💻](https://github.com/ferattass) • [LinkedIn Profili 💼](https://www.linkedin.com/in/ferattass)
 
 ### 👩‍🔧 Özgür EYYÜPOĞLU
 
-**UI/UX & WooCommerce Entegrasyonu**
+**Full Stack Geliştirici & UI/UX & WooCommerce Entegrasyonu**
 [GitHub Profili 💻](https://github.com/ozgureyyp) • [LinkedIn Profili 💼](https://www.linkedin.com/in/ozgureyyupoglu)
 
 ---
