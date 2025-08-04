@@ -120,7 +120,7 @@ Bu tema **Sovyra Takımı** tarafından geliştirilmiştir:
 **Proje sorumlusu & Full Stack Geliştirici & Tema Mimarisini Kuran**
 [GitHub Profili 💻](https://github.com/ferattass) • [LinkedIn Profili 💼](https://www.linkedin.com/in/ferattass)
 
-### 👩‍🔧 Özgür EYYÜPOĞLU
+### 👩‍🔧 Özgür EYYUPOĞLU
 
 **Full Stack Geliştirici & UI/UX & WooCommerce Entegrasyonu**
 [GitHub Profili 💻](https://github.com/ozgureyyp) • [LinkedIn Profili 💼](https://www.linkedin.com/in/ozgureyyupoglu)
